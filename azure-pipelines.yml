@@ -28,11 +28,11 @@ steps:
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 
-- task: Docker@2
-  inputs:
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+#- task: Docker@2
+#  inputs:
+#    command: 'buildAndPush'
+#    Dockerfile: '**/Dockerfile'
 
